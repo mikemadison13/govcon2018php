@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Helper functions for content block.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function example_4_plugin_theme($existing, $type, $theme, $path) {
+  return [
+    'helloadvanced' => [
+      'variables' => [
+        'text' => NULL,
+        'person' => NULL,
+        'session' => NULL,
+      ],
+      'template' => 'hello-advanced',
+    ],
+  ];
+}

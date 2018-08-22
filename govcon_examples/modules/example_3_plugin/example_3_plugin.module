@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Helper functions for content block.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function example_3_plugin_theme($existing, $type, $theme, $path) {
+  return [
+    'helloworld' => [
+      'variables' => [
+        'text' => NULL,
+      ],
+      'template' => 'hello-world',
+    ],
+  ];
+}

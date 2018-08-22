@@ -1,0 +1,9 @@
+name: GovCon PHP Development Examples
+type: module
+description: 'Provides Example Code for 2018 GovCon.'
+package: Examples
+core: 8.x
+dependencies:
+- drupal:block
+- drupal:devel
+- drupal:kint

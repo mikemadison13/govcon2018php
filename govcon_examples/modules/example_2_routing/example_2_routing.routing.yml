@@ -1,0 +1,6 @@
+examples.advancedhello:
+  path: '/advancedhello'
+  defaults:
+    _controller: '\Drupal\example_2_routing\Controller\HelloWorldController::hello'
+  requirements:
+    _permission: 'access content'

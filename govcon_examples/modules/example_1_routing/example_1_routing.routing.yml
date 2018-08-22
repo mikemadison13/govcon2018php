@@ -1,0 +1,6 @@
+examples.hello:
+  path: '/hello'
+  defaults:
+    _controller: '\Drupal\example_1_routing\Controller\HelloWorldController::hello'
+  requirements:
+    _permission: 'access content'
