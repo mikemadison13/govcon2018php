@@ -1,0 +1,17 @@
+<?
+
+use Drupal\field\Entity\FieldStorageConfig;
+
+/**
+* Removes field_image.
+*/
+function example_5_update_update_8001() {
+  $paragraph = FieldStorageConfig::loadByName('paragraph', 'field_image');
+  if ($paragraph) {
+    $paragraph->delete();
+  }
+  $block = FieldStorageConfig::loadByName('block_content', 'field_image');
+  if ($block) {
+    $block->delete();
+  }
+}

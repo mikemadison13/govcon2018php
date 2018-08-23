@@ -1,0 +1,5 @@
+name: DB Update Example
+type: module
+description: 'Provides Example Code for 2018 GovCon.'
+package: Examples
+core: 8.x
