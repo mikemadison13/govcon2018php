@@ -25,7 +25,7 @@ class HelloWorldController extends ControllerBase {
   public function hello() {
     $current_user = \Drupal::currentUser();
     $user = \Drupal\user\Entity\User::load($current_user->id());
-    if ($user->uid->vale > 0) {
+    if ($user->uid->value > 0) {
       return ['#markup' => "Hello " . $user->name->value];
     }
     else {
